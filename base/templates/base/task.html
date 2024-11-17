@@ -1,0 +1,10 @@
+<h1>Task: {{ task }}</h1>
+<p>{{ task.description }}</p>
+
+{% if task.complete %}
+<h3>Completed</h3>
+{% else %}
+<h3>Not completed yet</h3>
+{% endif %}
+
+<footer>{{ task.created }}</footer>
